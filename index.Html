@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Anja's asteroid watcher</title>
+  </head>
+
+  <body>
+    <div id="container"></div>
+    <h3 id="error"></h3>
+    <form id="forma">
+      start date:
+      <input type="text" name="start" id="start" /><br />
+      end date: <input type="text" name="start" id="end" /><br />
+      <input type="submit" value="Prikazi asteroide" />
+    </form>
+    <table id="aster"></table>
+    <table id="selected"></table>
+    <button class="hdbutton">broj prolaza pored zemlje</button>
+    <table id="chart"></table>
+
+    <script type="module">
+      import { init } from "./src/controler.js";
+      init();
+    </script>
+  </body>
+</html>
